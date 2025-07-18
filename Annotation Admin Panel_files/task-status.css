@@ -1,0 +1,106 @@
+/* Task Status Modal Styles */
+
+/* Error category options with step inputs */
+.error-category-option {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    gap: 12px;
+}
+
+.error-category-option:hover {
+    background-color: var(--bg-elevated);
+}
+
+.error-category-option input[type="checkbox"] {
+    flex-shrink: 0;
+}
+
+.error-category-text {
+    flex: 1;
+}
+
+.error-step-input {
+    width: 200px !important;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 4px 6px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-primary);
+    border-radius: 4px;
+    color: var(--text-primary);
+    font-size: 13px;
+    text-align: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.error-step-input.hidden {
+    display: none;
+}
+
+.error-step-input:focus {
+    border-color: var(--color-primary);
+    outline: none;
+}
+
+.error-step-input::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
+/* Validation error message */
+.validation-error-message {
+    color: var(--color-error);
+    font-size: 14px;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    background-color: var(--error-bg);
+    border: 1px solid var(--error-border);
+    border-radius: 4px;
+}
+
+.validation-error-message.hidden {
+    display: none;
+}
+
+/* Modal footer layout */
+.modal-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.modal-footer-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    align-items: center;
+}
+
+/* Error category headers */
+.error-category-header {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.error-category-header:first-child {
+    margin-top: 0;
+}
+
+/* Annotation error categories container */
+.annotation-error-categories {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid var(--border-primary);
+    border-radius: 4px;
+    padding: 12px;
+    background: var(--bg-surface);
+    margin-bottom: 16px;
+}
